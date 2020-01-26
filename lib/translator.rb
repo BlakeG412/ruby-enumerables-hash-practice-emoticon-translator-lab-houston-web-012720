@@ -18,7 +18,8 @@ def load_library
 end
 
 def get_japanese_emoticon
-  
+   result = load_library(file_path)['get_emoticon'][emoticon]
+  result ? result : "Sorry, that emoticon was not found"
   # code goes here
 end
 
